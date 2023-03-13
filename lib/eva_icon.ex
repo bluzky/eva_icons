@@ -3,7 +3,7 @@ defmodule EvaIcon do
 
   alias EvaIcon.Icon
 
-  priv_dir = :code.priv_dir(:lucide_icons) |> List.to_string()
+  priv_dir = :code.priv_dir(:eva_icons) |> List.to_string()
   icon_paths = Path.join(priv_dir, "icon_svg/*.svg") |> Path.wildcard()
 
   icons =
