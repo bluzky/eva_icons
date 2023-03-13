@@ -1,12 +1,12 @@
-defmodule Lucideicons.MixProject do
+defmodule EvaIcon.MixProject do
   use Mix.Project
 
   @version "1.0.0"
-  @github_url "https://github.com/zoedsoupe/lucide_icons"
+  @github_url "https://github.com/bluzky/eva_icons"
 
   def project do
     [
-      app: :lucide_icons,
+      app: :eva_icons,
       version: @version,
       elixir: "~> 1.13",
       start_permanent: Mix.env() == :prod,
@@ -34,24 +34,19 @@ defmodule Lucideicons.MixProject do
 
   defp docs do
     [
-      main: "Lucideicons",
+      main: "EvaIcon",
       source_ref: "v#{@version}",
       source_url: @github_url,
-      groups_for_modules: [LiveView: ~r/Lucideicons.LiveView/],
-      nest_modules_by_prefix: [Lucideicons.LiveView],
+      groups_for_modules: [LiveView: ~r/EvaIcon.LiveView/],
+      nest_modules_by_prefix: [EvaIcon.LiveView],
       extras: ["README.md"]
     ]
   end
 
   defp description do
     """
-    This package adds a convenient way of using Lucide
+    This package adds a convenient way of using Eva icon
     with your Phoenix and Phoenix LiveView applications.
-
-    Lucide is "An open source icon library for displaying
-    icons and symbols in digital and non-digital projects.
-    It consists of 850+ Vector (svg) files", and is a fork
-    of Feather Icons.
     """
   end
 
